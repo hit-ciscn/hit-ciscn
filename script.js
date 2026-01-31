@@ -50,7 +50,7 @@ const awardsData = [
         title: '基于大模型幻觉增强技术的代码漏洞挖掘系统',
         level: '二等奖',
         description: '队长：张蕊。',
-        advisor: '翟建宏老师',
+        advisor: '翟健宏老师',
         advisorLink: 'https://homepage.hit.edu.cn/zhaijh',
         team: '张蕊团队',
         tags: ['大模型', '幻觉增强', '漏洞挖掘']
