@@ -1,16 +1,102 @@
-## Hi there 👋
+# XX高校 - 全国大学生信息安全竞赛主页
 
-<!--
-**hit-ciscn/hit-ciscn** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+这是XX高校全国大学生信息安全竞赛的官方网站，展示竞赛信息、历年获奖作品等内容。
 
-Here are some ideas to get you started:
+## 功能特性
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+- 📱 响应式设计，支持移动端和桌面端
+- 🎨 现代化的UI设计
+- 📊 历年获奖作品展示
+- 🔍 按年份筛选获奖作品
+- 🚀 自动部署到GitHub Pages
+
+## 项目结构
+
+```
+hit-ciscn/
+├── index.html          # 主页面
+├── styles.css          # 样式文件
+├── script.js           # JavaScript交互逻辑
+├── .github/
+│   └── workflows/
+│       └── deploy.yml  # GitHub Pages自动部署配置
+└── README.md           # 项目说明文档
+```
+
+## 本地开发
+
+1. 克隆仓库：
+```bash
+git clone https://github.com/yourusername/hit-ciscn.git
+cd hit-ciscn
+```
+
+2. 使用本地服务器打开（推荐使用Python）：
+```bash
+# Python 3
+python -m http.server 8000
+
+# 或者使用Node.js的http-server
+npx http-server -p 8000
+```
+
+3. 在浏览器中访问 `http://localhost:8000`
+
+## 部署到GitHub Pages
+
+### 方法一：使用GitHub Actions（推荐）
+
+1. 确保仓库已启用GitHub Pages：
+   - 进入仓库 Settings → Pages
+   - Source 选择 "GitHub Actions"
+
+2. 推送代码到main分支，GitHub Actions会自动部署
+
+### 方法二：手动部署
+
+1. 安装gh-pages：
+```bash
+npm install -g gh-pages
+```
+
+2. 部署：
+```bash
+gh-pages -d .
+```
+
+## 自定义内容
+
+### 修改学校名称
+
+在 `index.html` 中搜索 "XX高校" 并替换为实际学校名称。
+
+### 修改获奖作品
+
+编辑 `script.js` 文件中的 `awardsData` 数组，添加或修改获奖作品信息。
+
+### 修改联系信息
+
+在 `index.html` 的 `#contact` 部分修改联系信息。
+
+### 修改颜色主题
+
+在 `styles.css` 的 `:root` 部分修改CSS变量来改变主题颜色。
+
+## 浏览器支持
+
+- Chrome (最新版本)
+- Firefox (最新版本)
+- Safari (最新版本)
+- Edge (最新版本)
+
+## 许可证
+
+MIT License
+
+## 贡献
+
+欢迎提交Issue和Pull Request！
+
+## 联系方式
+
+如有问题，请联系：ciscn@xxuniversity.edu.cn
